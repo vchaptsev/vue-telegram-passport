@@ -1,6 +1,6 @@
 <h1>Vue Telegram Passport</h1>
 <p>
-    <img src="https://i.imgur.com/ex5hnL3.png" />
+    <img src="https://i.imgur.com/9NBqALW.png" />
     <br>
     <br>
     <a href="https://badge.fury.io/js/vue-telegram-passport">
@@ -65,6 +65,8 @@ export default {
 
 
 ## Props
+You can play around with options on the official [passport page](https://core.telegram.org/passport/example)
+
 | Name              | Description                                                                   | Required | Default     |
 | ----------------- | ----------------------------------------------------------------------------- | -------- | ----------- |
 | authParameters    | [docs](https://core.telegram.org/passport/sdk-javascript#authparameters)      | True     | null        |
