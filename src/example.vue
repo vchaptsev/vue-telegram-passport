@@ -1,6 +1,6 @@
 <template>
 
-  <telegram-passport
+  <vue-telegram-passport
     :authParameters="{
       bot_id: 123456789,
       scope: ['id_document', 'address_document', 'phone_number', 'email'],
