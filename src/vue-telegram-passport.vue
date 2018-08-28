@@ -10,7 +10,7 @@ export default {
       type: Object,
       required: true,
       validator (value) {
-        const required_fields =  ['bot_id', 'scope', 'public_key', 'payload']
+        const required_fields =  ['bot_id', 'scope', 'public_key', 'nonce']
         const isValid = required_fields.every(key => Object.keys(value).includes(key))
         if (!isValid) {console.error(`You must provide required fields: ${required_fields}`)}
         return isValid

@@ -50,7 +50,8 @@ Import `vue-telegram-passport`, pass it to the `components` and use in your temp
       scope: ['id_document', 'address_document', 'phone_number', 'email'],
       public_key: 'Your public key',
       nonce: 'Bot-specified payload',
-    }"/>
+    }"
+  />
     ...
 </template>
 
@@ -59,7 +60,7 @@ import {vueTelegramPassport} from 'vue-telegram-passport'
 
 export default {
   ...
-  components: vueTelegramPassport,
+  components: {vueTelegramPassport},
   ...
 }
 </script>
