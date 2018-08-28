@@ -43,22 +43,24 @@ Import `vue-telegram-passport`, pass it to the `components` and use in your temp
 
 ```html
 <template>
-  <telegram-passport
+  ...
+  <vueTelegramPassport
     :authParameters="{
       bot_id: 123456789,
       scope: ['id_document', 'address_document', 'phone_number', 'email'],
       public_key: 'Your public key',
-      payload: 'Bot-specified payload',
-    }"
-  />
+      nonce: 'Bot-specified payload',
+    }"/>
+    ...
 </template>
 
 <script>
 import {vueTelegramPassport} from 'vue-telegram-passport'
 
 export default {
-  name: 'your-component',
-  components: {vueTelegramPassport},
+  ...
+  components: vueTelegramPassport,
+  ...
 }
 </script>
 ```
